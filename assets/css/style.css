@@ -45,8 +45,8 @@ header h1 a {
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
     list-style: none;
     margin-top: 30px;
     border: green solid ;
@@ -81,39 +81,23 @@ header nav ul li a:hover {
 
 /* Defining hero settings */
 .hero {
-    background-image: url("../images/sarah-dorweiler-QeVmJxZOv3k-unsplash.jpg");
-    /* background-size: cover; */
-    background-position: center;
-    /* display: flex;
+    background-image: url("../images/bg-image.jpg");
+    background-position:center;
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+    height: 300px;
+    border: green solid; 
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center; */
-    /* max-width: 100%;
-    height: 300px; */
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: tomato solid ;
-    display: block;
-
-    /* display: block; */
-    /* max-width: 100px;
-    max-height: 100px;
-    image-rendering: auto; */
-    width: 100%;
-    height: auto;
-
-
+    align-items: center;
+    justify-content: end;
 }
 
-.hero h2 {
+.hero-text h2 {
     font-size: 3.50vw;
     color: var(--primary-color);
     border: tomato solid ;
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: flex-end;
-    /* bottom: 0%;
-    position: absolute; */
-    /* max-height: 100px; */
-
-
+    color: var(--primary-color);
+    text-shadow: 4px 4px black;
+    margin-top: 240px;
 }
