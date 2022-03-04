@@ -109,6 +109,7 @@ header nav ul li a:hover {
 
 .pf-ctnr {
     border: orange 4px solid; 
+    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -116,6 +117,7 @@ header nav ul li a:hover {
     justify-content: space-between;
     height: auto;
     width: 100%;
+    line-height: 1.5;
 }
 
 .pf-ctnr-about, .pf-ctnr-work, .pf-ctnr-contact {
@@ -124,44 +126,78 @@ header nav ul li a:hover {
     padding: 10px;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-around; 
 }
 
 /* .pf-ctnr-boxes */
 
 .pf-ctnr-side {
-    border: blue 4px solid;
+    border-right-style: solid;
+    border-color: grey;
+    border-width: 6px;
     padding: 10px;
-    width: 30%;
+    width: 200px;
+    height: auto;
     text-align: right;
 }
 
-.pf-ctnr-text, .pf-ctnr-boxes {
+.pf-ctnr-text, .pf-ctnr-boxes, .pf-ctnr-contact-info {
     border: yellow 4px solid;
     padding: 10px;
-    width: 60%;
+    width: 80%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.pf-ctnr-text-title {
+    border: #00CED1 4px solid;
+    width: 50%;
+}
+
+.pf-ctnr-text p, .pf-ctnr-text-title h4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    border: #000000 4px solid;
+    padding: 20px;
+}
+
+.pf-ctnr-img img {
+    border: palevioletred 5px solid;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 20px;
+    object-fit: cover;
+}
+
 
 
 .pf-ctnr-main-box {
     border: #000000 4px solid;
-    width: 100%;
+    width: 95%;
     height: 200px;
-    margin: 10px;
-    align-items: center;
+    margin: 20px 28px;
+    display: flex;
+    align-items: end;
 }
 
 
 .pf-ctnr-box {
     border: black 4px solid; 
-    margin: 10px;
+    margin: 20px;
     width: 45%;
     height: 100px;
+    display: flex;
+    align-items: flex-end;
 }
-
 
 /* 
 .pf-ctnr-box1 {
@@ -188,7 +224,7 @@ header nav ul li a:hover {
     width: 45%;
 } */
 
-.pf-ctnr-contact {
-    border: black 4px solid; 
-    
+.pf-ctnr-contact-info {
+    border: purple 4px solid; 
+    justify-content: space-around;
 }
