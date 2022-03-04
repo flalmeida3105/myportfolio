@@ -104,33 +104,91 @@ header nav ul li a:hover {
     text-shadow: 4px 4px black;
 }
 
-.portfolio-ctnr div > * {
-        border: orange 4px solid; 
 
-}
+/* Adding portfolio styles */
 
-.portfolio-ctnr {
+.pf-ctnr {
     border: orange 4px solid; 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
 }
 
-.portfolio-ctnr-about {
+.pf-ctnr-about, .pf-ctnr-work, .pf-ctnr-contact {
     border: black 4px solid; 
     display: flex;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+/* .pf-ctnr-boxes */
+
+.pf-ctnr-side {
+    border: blue 4px solid;
+    padding: 10px;
+    width: 30%;
+    text-align: right;
+}
+
+.pf-ctnr-text, .pf-ctnr-boxes {
+    border: yellow 4px solid;
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
 
-.portfolio-ctnr-work {
+
+.pf-ctnr-main-box {
+    border: #000000 4px solid;
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    align-items: center;
+}
+
+
+.pf-ctnr-box {
     border: black 4px solid; 
-    
+    margin: 10px;
+    width: 45%;
+    height: 100px;
 }
 
-.portfolio-ctnr-contact {
+
+/* 
+.pf-ctnr-box1 {
+    border: black 4px solid; 
+    margin: 10px;
+    width: 45%;
+}
+
+.pf-ctnr-box2 {
+    border: black 4px solid; 
+    margin: 10px;
+    width: 45%;
+}
+
+.pf-ctnr-box3 {
+    border: black 4px solid; 
+    margin: 10px;
+    width: 45%;
+}
+
+.pf-ctnr-box4 {
+    border: black 4px solid; 
+    margin: 10px;
+    width: 45%;
+} */
+
+.pf-ctnr-contact {
     border: black 4px solid; 
     
 }
