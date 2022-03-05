@@ -177,27 +177,34 @@ header nav ul li a:hover {
     max-height: 400px;
     padding: 1em;
     object-fit: cover;
+    border-radius: 50%;
 }
-
-
 
 .pf-ctnr-main-box {
     border: #000000 4px solid;
     width: 95%;
-    height: 200px;
+    height: 300px;
     margin: 20px 28px;
     display: flex;
-    align-items: end;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
-
 
 .pf-ctnr-box {
     border: black 4px solid; 
     margin: 20px;
     width: 45%;
-    height: 100px;
+    height: 180px;
     display: flex;
     align-items: flex-end;
+}
+
+.pf-ctnr-boxes-borders {
+    padding: 0.2em;
+    width: 200px;
+    border-radius: 10px 10px 10px 0;
+    border: brown 3px solid;
+    background-color: #90c3dd;
 }
 
 /* 
@@ -245,10 +252,7 @@ header nav ul li a:hover {
 
     .hero-ctnr {
         border: yellow solid ;
-        /* align-self: flex-end; */
         display: flex;
-        /* flex-wrap: wrap; */
-        /* align-self: center; */
         justify-content: center;
     }
     .pf-ctnr-side {
@@ -277,7 +281,6 @@ header nav ul li a:hover {
     }
     
     #pf-about {
-        /* display: block; */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -286,9 +289,9 @@ header nav ul li a:hover {
 
     #small img {
         border: palevioletred 5px solid;
+        border-radius: 50%;
         max-width: 160px;
         max-height: 160px;
-        /* padding: 1em; */
         object-fit:fill;
     }
 
