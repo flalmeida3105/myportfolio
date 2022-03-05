@@ -197,6 +197,10 @@ header nav ul li a:hover {
     height: 180px;
     display: flex;
     align-items: flex-end;
+    background-position:center;
+    background-size:cover;
+    opacity: .6;
+
 }
 
 .pf-ctnr-boxes-borders {
@@ -207,22 +211,31 @@ header nav ul li a:hover {
     background-color: #90c3dd;
 }
 
-/* 
+
+#pf-ctnr-box {
+    background-image: url("../images/run-buddy2.jpeg");
+
+}
+
 #pf-ctnr-box1 {
-    
+    background-image: url("../images/horiseon.jpg");
+
 }
 
 #pf-ctnr-box2 {
+    background-image: url("../images/fisioemcasa.jpeg");
 
 }
 
 #pf-ctnr-box3 {
+    background-image: url("../images/oficina-tortas.jpeg");
 
 }
 
 #pf-ctnr-box4 {
+    background-image: url("../images/marliese-streefland-2l0CWTpcChI-unsplash.jpg");
 
-} */
+}
 
 .pf-ctnr-contact-info {
     border: purple 4px solid; 
