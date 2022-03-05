@@ -284,7 +284,6 @@ header nav ul li a:hover {
         align-items: center;
     }
 
-
     #small img {
         border: palevioletred 5px solid;
         max-width: 160px;
@@ -297,7 +296,10 @@ header nav ul li a:hover {
         display: none;
     }
 
-
+    .pf-ctnr-main-box, .pf-ctnr-box {
+        margin: 10px 0;
+        width: 100%;
+    }
 }
 
 
