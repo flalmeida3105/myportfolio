@@ -36,7 +36,7 @@ header {
 }
 
 header h1 a {
-    font-size: 2.55vw;
+    font-size: 2.5rem;
     margin-top: auto;
     color: var(--primary-color); 
     border: tomato solid ;
@@ -55,7 +55,7 @@ header nav ul {
 header nav ul li {
     padding: 10px;
     font-weight: lighter;
-    font-size: 1.30vw;
+    font-size: 1.55rem;
     margin-top: auto;
     border: yellow solid ;
 }
@@ -63,7 +63,7 @@ header nav ul li {
 header nav ul li a {
     /* padding: 10px; */
     font-weight: lighter;
-    font-size: 1.30vw;
+    font-size: 1.55rem;
     /* margin-top: auto; */
     border: tomato solid ;
     color: var(--primary-color);
@@ -99,7 +99,7 @@ header nav ul li a:hover {
 }
 
 .hero-ctnr-text h2 {
-    font-size: 3.50vw;
+    font-size: 2.50rem;
     color: var(--primary-color);
     text-shadow: 4px 4px black;
 }
@@ -135,7 +135,7 @@ header nav ul li a:hover {
     border-right-style: solid;
     border-color: grey;
     border-width: 6px;
-    padding: 10px;
+    padding: 10em;
     width: 200px;
     height: auto;
     text-align: right;
@@ -152,9 +152,11 @@ header nav ul li a:hover {
     align-items: center;
 }
 
+
+
 .pf-ctnr-text-title {
     border: #00CED1 4px solid;
-    width: 50%;
+    width: 70%;
 }
 
 .pf-ctnr-text p, .pf-ctnr-text-title h4 {
