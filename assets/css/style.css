@@ -319,7 +319,6 @@ footer h3, footer div {
     }
 
     .hero-ctnr {
-        border: yellow solid ;
         display: flex;
         justify-content: center;
     }
@@ -334,7 +333,6 @@ footer h3, footer div {
     }
 
     .pf-ctnr-text, .pf-ctnr-boxes, .pf-ctnr-contact-info {
-        border: burlywood 4px solid;
         padding: 0.2em;
         width: 100%;
         display: flex;
@@ -350,7 +348,6 @@ footer h3, footer div {
     }
 
     .pf-ctnr-text-title {
-        border: #00CED1 4px solid;
         width: 100%;
     }
 
@@ -366,7 +363,6 @@ footer h3, footer div {
     }
 
     #small img {
-        border: palevioletred 5px solid;
         border-radius: 50%;
         max-width: 160px;
         max-height: 160px;
