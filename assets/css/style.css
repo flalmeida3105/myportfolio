@@ -1,8 +1,11 @@
+/* Defining CSS variables */
 :root {
     --primary-color: #dcdfec;
     --secondary-color: #2a607c;
     --tertiary-color: #00CED1;
-    --hover-color: #000000;   
+    --black-color: #000000;   
+    --bg-color: rgba(0, 0, 0, 0.4);
+    --hover-color: rgba(83, 82, 82, 0.422);
 }
 
     /* removing default browser-enforced styles */
@@ -21,106 +24,112 @@ body {
 
 /* ------------- Start header style ------------- */
 
-
 /* applying styles to <header> */
 header {
-    padding: 0.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
-    border: tomato solid ;
+    /* text-align: center; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/bg-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+    
+}
 
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+header h1 {
+    display: flex;
 }
 
 header img {
     width: 6rem;
     height: auto;
+    margin-top: 1rem;
 }
 
-header h1 {
-    border: violet 3px solid;
+header h1 a{
+    padding: 0 1rem 0 1rem;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-}
-
-header h1 a {
+    color: var(--primary-color);
+    text-shadow: 3px 3px black;
     font-size: 2rem;
     margin-top: auto;
-    color: var(--primary-color); 
-    border: lightgreen solid ;
-
 }
 
 header nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: end;
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
-    /* margin-top: 30px; */
-    border: green solid ;
 }
 
 header nav ul li {
-    padding: 10px;
+    padding: 0 0.7rem;
     font-weight: lighter;
     font-size: 1.55rem;
     margin-top: auto;
-    border: yellow solid ;
 }
 
 header nav ul li a {
-    /* padding: 10px; */
     font-weight: lighter;
     font-size: 1.55rem;
-    /* margin-top: auto; */
-    border: purple solid ;
     color: var(--primary-color);
-    /* text-decoration: ; */
+    text-shadow: 3px 3px black;
 }
 
-header nav ul li a:hover {
-    background-color: var(--primary-color);
+header div h1 a:hover ,header nav ul li a:hover {
     color: var(--hover-color);
 }
-
 /* ------------- Finish header style ------------- */
 
-/* ------------- Start Hero style ------------- */
 
+/* ------------- Start Hero style ------------- */
 /* Defining hero settings */
 .hero-ctnr {
     background-image: url("../images/bg-image.jpg");
-    background-position:center;
-    background-size:cover;
-    /* background-repeat: no-repeat; */
-    height: 250px;
-    border: greenyellow solid; 
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center;  */
-    justify-content: right; 
+    justify-content: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 250px;
 }
 
 .hero-ctnr-text {
-    border: rebeccapurple solid ;
+    width: 100%;
     align-self: flex-end;
+    text-align: right;
 }
 
 .hero-ctnr-text h2 {
     font-size: 2.50rem;
     color: var(--primary-color);
     text-shadow: 4px 4px black;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 
