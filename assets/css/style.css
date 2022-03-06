@@ -291,6 +291,85 @@ footer h3, footer div {
         justify-content: center;
         position: relative;
     }
+    header div, header h1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    header div h1 a {
+        margin-bottom: 0;
+    }
+
+    header div nav ul, header div nav ul li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.3rem;
+    }
+
+    .hero-ctnr {
+        display: flex;
+        justify-content: center;
+    }
+    .pf-ctnr-side {
+        border-right-style: none;
+        border-bottom-style: solid;
+        border-color: grey;
+        border-width: 6px;
+        padding: 0em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+ 
+    .pf-ctnr-text, .pf-ctnr-boxes, .pf-ctnr-contact-info {
+        padding: 0.2em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-ctnr-text h2 {
+        font-size: 1.50rem;
+        text-align: center;
+
+        /* color: var(--primary-color);
+        text-shadow: 4px 4px black;
+        background-color: rgba(0, 0, 0, 0.4); */
+    }
+
+   #pf-ctnr-box0 a, #pf-ctnr-box1, #pf-ctnr-box2, #pf-ctnr-box3, #pf-ctnr-box4 {
+        width: 98%;
+    }
+
+    #pf-ctnr-box0 a, #pf-ctnr-box1 a, #pf-ctnr-box2 a, #pf-ctnr-box3 a, #pf-ctnr-box4 a {
+        width: 91%;
+    }
+
+    .pf-ctnr-text-title {
+        width: 100%;
+    }
+
+    .pf-ctnr-text p {
+        text-align: justify;
+    }
+    
+    #pf-ctnr-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #large img {
+        border-radius: 50%;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit:fill;
+    }
 }
 
 /* Hides profile image when width is higher than 768px */
