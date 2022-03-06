@@ -333,12 +333,8 @@ footer h3, footer div {
     }
 
     .hero-ctnr-text h2 {
-        font-size: 1.50rem;
+        font-size: 2rem;
         text-align: center;
-
-        /* color: var(--primary-color);
-        text-shadow: 4px 4px black;
-        background-color: rgba(0, 0, 0, 0.4); */
     }
 
    #pf-ctnr-box0 a, #pf-ctnr-box1, #pf-ctnr-box2, #pf-ctnr-box3, #pf-ctnr-box4 {
@@ -425,6 +421,11 @@ footer h3, footer div {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+       .hero-ctnr-text h2 {
+        font-size: 1.2rem;
+        text-align: center;
     }
 
    #pf-ctnr-box0 a, #pf-ctnr-box1, #pf-ctnr-box2, #pf-ctnr-box3, #pf-ctnr-box4 {
