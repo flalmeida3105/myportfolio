@@ -9,7 +9,7 @@
     --border-color: #2a607c;
 }
 
-    /* removing default browser-enforced styles */
+/* removing default browser-enforced styles */
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +22,7 @@ body {
     background-color: var(--primary-color);
 }
 /* ------------- Finish Body style ------------- */
+
 
 /* ------------- Start header style ------------- */
 
@@ -130,8 +131,10 @@ header div h1 a:hover ,header nav ul li a:hover {
     text-shadow: 4px 4px black;
     background-color: rgba(0, 0, 0, 0.4);
 }
+/* ------------- Finish Hero style ------------- */
 
 
+/* ------------- Start PortFolio style ------------- */
 /* Adding portfolio styles */
 .pf-ctnr {
     padding: 20px;
@@ -224,7 +227,6 @@ header div h1 a:hover ,header nav ul li a:hover {
     background-size:cover;
 }
 
-
 .pf-ctnr-boxes-borders {
     padding: 0.2em;
     width: 200px;
@@ -248,7 +250,6 @@ header div h1 a:hover ,header nav ul li a:hover {
     height: 300px;
     position: absolute;
 }
-
 
 #pf-ctnr-box1 {
     background-image: url("../images/horiseon.jpg");
@@ -276,15 +277,20 @@ header div h1 a:hover ,header nav ul li a:hover {
 .pf-ctnr-contact-info {
     justify-content: space-around;
 }
+/* ------------- Finish Portfolio style ------------- */
 
+/* ------------- Start Footer style ------------- */
 footer h3, footer div {
     font-size: 1rem;
     text-align: center;
     opacity: 0.4;
-
 }
+/* ------------- Finish Footer style ------------- */
 
-/* Media query for smaller devices */
+
+/* ------------- Start Media Query style ------------- */
+
+/* Adjust the site to resolutions grater than 768px and less than 980px */
 @media screen and (max-width:980px) {
     header {
         padding: 0;
@@ -466,10 +472,6 @@ footer h3, footer div {
         margin: 10px 0;
         width: 100%;
     }
-
 }
 
-/* Media query for mobiles and smaller */
-@media screen and (max-width:575px) {
-
-}
+/* ------------- Finish Media Query style ------------- */
