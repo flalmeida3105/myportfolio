@@ -24,7 +24,7 @@ body {
 
 /* applying styles to <header> */
 header {
-    padding: 10px;
+    padding: 0.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--secondary-color);
     display: flex;
@@ -35,11 +35,31 @@ header {
 
 }
 
+header img {
+    width: 100px;
+    height: 90px;
+}
+
+header h1 {
+    border: violet 3px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 header h1 a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: auto;
     color: var(--primary-color); 
     border: lightgreen solid ;
+
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
 }
 
 header nav ul {
@@ -47,7 +67,7 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     border: green solid ;
 }
 
@@ -247,12 +267,12 @@ header nav ul li a:hover {
 }
 
 
-#pf-ctnr-box {
+#pf-ctnr-box0 {
     background-image: url("../images/run-buddy2.jpeg");
     /* width: 100%; */
 }
 
-#pf-ctnr-box a {
+#pf-ctnr-box0 a {
     border: #00CED1 10px solid;
     width: 73%;
     height: 300px;
@@ -291,6 +311,13 @@ header nav ul li a:hover {
 .pf-ctnr-contact-info {
     border: purple 4px solid; 
     justify-content: space-around;
+}
+
+footer h3, footer div {
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.4;
+
 }
 
 /* Hides profile image when width is higher than 768px */
@@ -333,6 +360,16 @@ header nav ul li a:hover {
         border: burlywood 4px solid;
         padding: 0.2em;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+   #pf-ctnr-box0 a, #pf-ctnr-box1, #pf-ctnr-box2, #pf-ctnr-box3, #pf-ctnr-box4 {
+        width: 100%;
+    }
+
+    #pf-ctnr-box0 a, #pf-ctnr-box1 a, #pf-ctnr-box2 a, #pf-ctnr-box3 a, #pf-ctnr-box4 a {
+        width: 77%;
     }
 
     .pf-ctnr-text-title {
@@ -367,6 +404,7 @@ header nav ul li a:hover {
         margin: 10px 0;
         width: 100%;
     }
+
 }
 
 
