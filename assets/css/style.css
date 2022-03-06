@@ -6,6 +6,7 @@
     --black-color: #000000;   
     --bg-color: rgba(0, 0, 0, 0.4);
     --hover-color: rgba(83, 82, 82, 0.422);
+    --border-color: #2a607c;
 }
 
     /* removing default browser-enforced styles */
@@ -30,7 +31,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* text-align: center; */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -40,7 +40,6 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
-    
 }
 
 header div {
@@ -134,14 +133,11 @@ header div h1 a:hover ,header nav ul li a:hover {
 
 
 /* Adding portfolio styles */
-
 .pf-ctnr {
-    border: orange 4px solid; 
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: space-between;
     height: auto;
     width: 100%;
@@ -149,7 +145,6 @@ header div h1 a:hover ,header nav ul li a:hover {
 }
 
 .pf-ctnr-about, .pf-ctnr-work, .pf-ctnr-contact {
-    border: black 4px solid; 
     display: flex;
     padding: 10px;
     width: 100%;
@@ -157,46 +152,18 @@ header div h1 a:hover ,header nav ul li a:hover {
     justify-content: space-around; 
 }
 
-
 .pf-ctnr-boxes {
-    border: green 4px solid; 
     padding: 1em;
     width: 80%;
     height: auto;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.pf-ctnr-boxes a  {
-    /* width: auto; 
-    border: #00CED1 5px solid;
-    display: flex;
-    flex-direction: column;  
-    flex-wrap: wrap;
-    justify-content: space-between; */
-} 
-
-
-/* .link {
-    border: yellow 14px solid;
-    position: absolute; 
-    width: 100%;
-    height: 300px;
-    top: 0;
-    left: 0;
-    z-index: 1; 
-    width: 100%;
-    height: 300px;
-    margin: 20px 28px; 
-} */
-
-
-
 .pf-ctnr-side {
     border-right-style: solid;
-    border-color: grey;
+    border-color: var(--border-color);
     border-width: 6px;
     padding: 1em;
     width: 200px;
@@ -205,7 +172,6 @@ header div h1 a:hover ,header nav ul li a:hover {
 }
 
 .pf-ctnr-text, .pf-ctnr-contact-info {
-    border: burlywood 4px solid;
     padding: 1em;
     width: 80%;
     height: auto;
@@ -215,10 +181,7 @@ header div h1 a:hover ,header nav ul li a:hover {
     align-items: center;
 }
 
-
-
 .pf-ctnr-text-title {
-    border: #00CED1 4px solid;
     width: 70%;
 }
 
@@ -227,16 +190,12 @@ header div h1 a:hover ,header nav ul li a:hover {
     height: auto;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    text-align: center;
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    border: #000000 4px solid;
+    text-align: justify;
     padding: 20px;
 }
 
 .pf-ctnr-img img {
-    border: palevioletred 5px solid;
+    border: var(--secondary-color) 5px solid;
     max-width: 400px;
     max-height: 400px;
     padding: 1em;
@@ -245,7 +204,7 @@ header div h1 a:hover ,header nav ul li a:hover {
 }
 
 .pf-ctnr-main-box {
-    border: #000000 4px solid;
+    border: var(--border-color) 4px solid;
     width: 98%;
     height: 300px;
     margin: 20px;
@@ -255,7 +214,7 @@ header div h1 a:hover ,header nav ul li a:hover {
 }
 
 .pf-ctnr-box {
-    border: black 4px solid; 
+    border: var(--border-color) 4px solid; 
     margin: 20px;
     width: 45%;
     height: 180px;
@@ -263,26 +222,28 @@ header div h1 a:hover ,header nav ul li a:hover {
     align-items: flex-end;
     background-position:center;
     background-size:cover;
-    opacity: .6;
-
 }
+
 
 .pf-ctnr-boxes-borders {
     padding: 0.2em;
     width: 200px;
     border-radius: 10px 10px 10px 0;
-    border: brown 3px solid;
-    background-color: #90c3dd;
+    border: var(--border-color) 3px solid;
+    background-color: var(--bg-color);
+    position: relative;
 }
 
+.pf-ctnr-boxes-borders h3, .pf-ctnr-boxes-borders p {
+    color: var(--primary-color);
+} 
 
 #pf-ctnr-box0 {
     background-image: url("../images/run-buddy2.jpeg");
-    /* width: 100%; */
+    
 }
 
 #pf-ctnr-box0 a {
-    border: #00CED1 10px solid;
     width: 73%;
     height: 300px;
     position: absolute;
@@ -291,34 +252,28 @@ header div h1 a:hover ,header nav ul li a:hover {
 
 #pf-ctnr-box1 {
     background-image: url("../images/horiseon.jpg");
-    width: 45%;
+
 }
 
 #pf-ctnr-box2 {
     background-image: url("../images/fisioemcasa.jpeg");
-    width: 45%;
-
 }
 
 #pf-ctnr-box3 {
     background-image: url("../images/oficina-tortas.jpeg");
-    width: 45%;
 }
 
 #pf-ctnr-box4 {
     background-image: url("../images/marliese-streefland-2l0CWTpcChI-unsplash.jpg");
-    width: 45%;
 }
 
 #pf-ctnr-box1 a, #pf-ctnr-box2 a, #pf-ctnr-box3 a, #pf-ctnr-box4 a {
-    border: #00CED1 10px solid;
     width: 34%;
     height: 180px;
     position: absolute;
 }
 
 .pf-ctnr-contact-info {
-    border: purple 4px solid; 
     justify-content: space-around;
 }
 
@@ -339,15 +294,28 @@ footer h3, footer div {
 /* Adjust the site to resolutions lower than 768px */
 @media screen and (max-width:768px) {
     header {
-        display: block;
+        display: flex;
+        justify-content: center;
+    }
+ 
+    header div, header h1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
     }
     
-    header nav ul {
+    header div h1 a {
+        margin-bottom: 0;
+    }
+
+    header div nav ul, header div nav ul li {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin: 0.3rem;
     }
 
     .hero-ctnr {
